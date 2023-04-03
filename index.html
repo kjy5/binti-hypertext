@@ -2,20 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My first presentation</title>
+    <title>Binti Hypertext</title>
     <link rel="stylesheet" href="styles/impress-common.css">
+    <link rel="stylesheet" href="styles/presentation.css">
 </head>
 <body class="impress-not-supported">
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a
+        simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
 <div id="impress">
-    <div id="myFirstSlide" class="step">
-        <h1>My first Slide</h1>
+    <div id="title" class="step" data-goto-next="intro">
+        <h1>A <a href="#/hypertext">hypertext</a> document inspired by excerpts from Nnedi Okorafor’s <i>Binti</i>.</h1>
+        <h2>By Kenneth Yang</h2>
+        <p>Use the arrow keys to navigate or click on <a href="#/intro">hyperlinked</a> text.</p>
     </div>
-    <div id="mySecondSlide" class="step" data-x="100">
-        <h1>My second Slide</h1>
+
+    <div id="hypertext" class="step" data-rel-y="-200" data-rel-x="-200" data-rel-z="-30" data-rotate="180"
+         data-scale="0.005" data-goto="title">
+        <img src="images/hypertext.webp" alt="Hypertext clip art"/>
+        <p>
+            A hypertext document is a type of electronic document that contains hyperlinks, which are clickable links
+            that can take you to other parts of the document, or to other documents altogether. This allows for a
+            non-linear way of reading and navigating through information, making it easier to access and connect related
+            content. The World Wide Web is perhaps the most famous example of a hypertext document system, where web
+            pages are linked together through hyperlinks.
+            <br>
+            <br>
+            <a href="#/title">⬅️ Back to title</a>
+        </p>
     </div>
+
+    <div id="intro" class="step" data-rel-y="1500" data-rel-to="title" data-goto-prev="title" data-goto-next="sample">
+        <h1>
+            When people ask me where I come from, I have a hard time answering...
+        </h1>
+        <h2 style="text-align: center;">
+            I grew up in many places:
+            <br>
+            <a href="#/california">California</a>, <a
+                href="#/singapore">Singapore</a>, <a
+                href="#/minnesota">Minnesota</a>, <a href="#/ohio">Ohio</a>, and <a href="#/seattle">Seattle</a>.
+        </h2>
+    </div>
+
+    <div id="sample" class="step" data-rel-y="1500">Sample step</div>
+
+    <!--    <div class="step" data-rel-x="200" data-rel-y="500">-->
+    <!--        Other thing-->
+    <!--    </div>-->
+    <!--    <div id="minnesota" class="step" data-scale="0.01" data-rel-x="">-->
+    <!--        <h1>My second Slide</h1>-->
+    <!--    </div>-->
 </div>
 
 <script src="scripts/impress.js"></script>
+<script src="scripts/rel.js"></script>
+<script src="scripts/goto.js"></script>
 <script>impress().init()</script>
 </body>
 </html>
