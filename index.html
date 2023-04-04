@@ -13,6 +13,7 @@
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
 <div id="impress">
+    <!-- Title slide-->
     <div id="title" class="step" data-goto-next="intro">
         <h1>A <a href="#/hypertext">hypertext</a> document inspired by excerpts from Nnedi Okorafor’s <i>Binti</i>.</h1>
         <h2>By Kenneth Yang</h2>
@@ -30,10 +31,11 @@
             pages are linked together through hyperlinks.
             <br>
             <br>
-            <a href="#/title">⬅️ Back to title</a>
+            <a href="#/title">⬅️ Return</a>
         </p>
     </div>
 
+    <!-- Intro slide-->
     <div id="intro" class="step" data-rel-y="1500" data-rel-to="title" data-goto-prev="title" data-goto-next="sample">
         <h1>
             When people ask me where I come from, I have a hard time answering...
@@ -43,18 +45,77 @@
             <br>
             <a href="#/california">California</a>, <a
                 href="#/singapore">Singapore</a>, <a
-                href="#/minnesota">Minnesota</a>, <a href="#/ohio">Ohio</a>, and <a href="#/seattle">Seattle</a>.
+                href="#/minnesota">Minnesota</a>, <a href="#/ohio">Ohio</a>, and <a href="#/washington">Washington</a>.
         </h2>
     </div>
 
-    <div id="sample" class="step" data-rel-y="1500">Sample step</div>
+    <!-- Places-->
+    <div id="california" class="step" data-rel-to="intro" data-rel-x="-450" data-rel-y="200" data-rel-z="-30"
+         data-scale="0.005" data-goto="intro">
+        <img src="images/california.webp" alt="California clip art"/>
+        <p>
+            California is a state located on the West Coast of the United States, known for its diverse population,
+            beautiful coastline, and sunny weather. It is the most populous state in the country and is home to major
+            cities like Los Angeles and San Francisco, as well as famous landmarks like the Golden Gate Bridge and
+            Hollywood.
+            <br>
+            <br>
+            <a href="#/intro">⬅️ Return</a>
+        </p>
+    </div>
 
-    <!--    <div class="step" data-rel-x="200" data-rel-y="500">-->
-    <!--        Other thing-->
-    <!--    </div>-->
-    <!--    <div id="minnesota" class="step" data-scale="0.01" data-rel-x="">-->
-    <!--        <h1>My second Slide</h1>-->
-    <!--    </div>-->
+    <div id="singapore" class="step" data-rel-to="intro" data-rel-y="200" data-rel-x="-200" data-rel-z="-30"
+         data-scale="0.005" data-goto="intro">
+        <img src="images/singapore.webp" alt="Singapore clip art"/>
+        <p>
+            Singapore is a highly developed city-state known for its vibrant cultural scene, delicious food, and
+            stunning architecture. It is a popular tourist destination and a major center for international trade and
+            commerce in the region.
+            <br>
+            <br>
+            <a href="#/intro">⬅️ Return</a>
+        </p>
+    </div>
+
+    <div id="minnesota" class="step" data-rel-to="intro" data-rel-y="200" data-rel-x="300" data-rel-z="-30"
+         data-scale="0.005" data-goto="intro">
+        <img src="images/minnesota.webp" alt="Minnesota clip art"/>
+        <p>
+            Minnesota is a state located in the Upper Midwest region of the United States, known for its natural beauty,
+            including its many lakes and forests. It is also home to a thriving arts and culture scene, as well as
+            several major companies such as Target, Best Buy, and 3M.
+            <br>
+            <br>
+            <a href="#/intro">⬅️ Return</a>
+        </p>
+    </div>
+
+    <div id="ohio" class="step" data-rel-to="intro" data-rel-y="200" data-rel-x="400" data-rel-z="-30"
+         data-scale="0.005" data-goto="intro">
+        <img src="images/ohio.webp" alt="Ohio clip art"/>
+        <p>
+            Ohio is a state located in the Midwestern region of the United States, known for its diverse economy, which
+            includes manufacturing, healthcare, and education. It is home to major cities like Cleveland, Columbus, and
+            Cincinnati, as well as several renowned universities and cultural institutions.
+            <br>
+            <br>
+            <a href="#/intro">⬅️ Return</a>
+        </p>
+    </div>
+
+    <div id="washington" class="step" data-rel-to="intro" data-rel-y="300" data-rel-z="-30"
+         data-scale="0.005" data-goto="intro">
+        <img src="images/washington.webp" alt="Washington clip art"/>
+        <p>
+            Washington state is located in the Pacific Northwest region of the United States, known for its breathtaking
+            natural beauty, including the Cascade Mountains, Puget Sound, and Olympic National Park. It is home to the
+            vibrant city of Seattle, as well as several major tech companies such as Amazon and Microsoft.
+            <br>
+            <br>
+            <a href="#/intro">⬅️ Return</a>
+        </p>
+    </div>
+
 </div>
 
 <script src="scripts/impress.js"></script>
