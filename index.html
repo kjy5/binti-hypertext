@@ -36,7 +36,7 @@
     </div>
 
     <!-- Intro slide-->
-    <div id="intro" class="step" data-rel-y="1500" data-rel-to="title" data-goto-prev="title" data-goto-next="sample">
+    <div id="intro" class="step" data-rel-y="1500" data-rel-to="title" data-goto-prev="title" data-goto-next="middle">
         <h1>
             When people ask me where I come from, I have a hard time answering...
         </h1>
@@ -50,8 +50,8 @@
         <p>
             Experiencing and expressing cultural differences is a very human situation. It’s very inherent in how we
             behave. <a href="#/binti">Binti</a> was experiencing others being unfamiliar with her culture. I experienced
-            something like this
-            before in middle school.
+            <a href="#/middle">something like this
+                before in middle school.</a>
         </p>
     </div>
 
@@ -136,6 +136,69 @@
             <a href="#/intro">⬅️ Return</a>
         </p>
     </div>
+
+    <!-- Middle School -->
+    <div id="middle" class="step" data-rel-y="1500" data-goto-prev="intro" data-goto-next="about">
+        <p>
+            Children often express themselves with no filter. I am Asian American, and less than 2% of the people in
+            Duluth, Minnesota looked like me and enjoyed and same foods as me. So, when I brought my lunch to school, my
+            classmates initially gawked at what I had and turned away in disgust. To them, traditional delicacies such
+            as <a href="#/eggs">咸鸭蛋 (salted duck egg)</a> or <a href="#/noodles">炸酱面 (noodles in fermented bean
+            sauce)</a> looked like rotten eggs and spaghetti so old that it turned black. We were all children then, and
+            children learn fast. I soon became their friend, and I was able to share my culture with them.
+        </p>
+    </div>
+
+    <div id="eggs" class="step" data-rel-y="100" data-rel-x="-1500" data-goto="middle" data-rel-to="middle">
+        <img src="images/salted_duck_egg.webp" alt="Salted duck eggs"/>
+        <p>
+            A salted duck egg is a preserved duck egg that has been soaked in a brine solution containing salt and other
+            ingredients such as charcoal and tea leaves. The resulting egg yolk is typically salty and savory, with a
+            unique texture and flavor. It is a popular ingredient in various Asian cuisines, used in dishes such as
+            mooncakes, steamed buns, and congee.
+            <br>
+            <br>
+            <a href="#/middle">⬅️ Return</a>
+        </p>
+    </div>
+
+    <div id="noodles" class="step" data-rel-y="-100" data-rel-x="1500" data-goto="middle" data-rel-to="middle">
+        <img src="images/zha_jiang_mian.webp" alt="Noodles in fermented bean sauce"/>
+        <p>
+            炸酱面 is a Chinese dish called "Zhajiangmian" in English, which consists of thick wheat noodles served with
+            a savory sauce made from fermented soybeans, ground pork, and vegetables such as onions and cucumbers. It is
+            a popular comfort food in northern China and can be found in many Chinese restaurants around the world.
+            <br>
+            <br>
+            <a href="#/middle">⬅️ Return</a>
+        </p>
+    </div>
+
+    <!-- About and Works Cited -->
+    <div id="about" class="step" data-rel-to="middle" data-rel-y="2000" data-goto-prev="middle"
+         data-goto-next="overview">
+        <h1>About This Hypertext</h1>
+        <ul>
+            <li>Main text was written by Kenneth Yang (me).</li>
+            <li>Descriptions of the various places and dishes were written with the help of ChatGPT.</li>
+            <li>Clip art images were made with Stable Diffusion.</li>
+            <li>
+                Image of salted duck eggs came from <a href="https://nutrition.ftempo.com">nutrition.ftempo.com</a> and
+                the image of noodles in fermented bean sauce came from <a
+                    href="https://www.pinterest.com/">pinterest.com</a>.
+            </li>
+            <li>This hypertext document was <a href="https://github.com/kjy5/binti-hypertext">created from scratch</a>
+                by Kenneth in HTML, CSS, and JavaScript.
+            </li>
+            <li>Presentation effects were made using <a
+                    href="https://github.com/impress/impress.js"><code>impress.js</code></a>.
+            </li>
+        </ul>
+    </div>
+
+    <!-- Overview -->
+    <div id="overview" class="step" data-rel-to="title" data-scale="8" data-goto-prev="about"
+         data-goto-next="title"></div>
 
 </div>
 

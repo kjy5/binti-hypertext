@@ -10,11 +10,35 @@ h1 {
 h2 {
     font-size: 4rem;
 }
+
+li,
 p {
     font-size: 3rem;
+}
+
+ul {
+    line-height: 3.5rem;
 }
 
 /* Step Styling */
 .step {
     width: 100vw;
+}
+
+/* Make inactive steps a bit transparent */
+.impress-enabled .step {
+    opacity: 0.3;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+.impress-enabled .step.active {
+    opacity: 1;
+}
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
 }
